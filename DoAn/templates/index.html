@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection System</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📧 Spam Detection System</h1>
+        <p class="subtitle">Nhập nội dung email của bạn:</p>
+        
+        <textarea id="emailInput" placeholder="Nhập nội dung email tại đây..."></textarea>
+        
+        <button class="btn" onclick="checkSpam()">
+            <i class="fa-solid fa-envelope-circle-check"></i> Kiểm tra ngay
+        </button>
+        
+        <div id="result" class="hidden">
+            <h2> Kết quả phân loại:</h2>
+            <p id="classification"></p>
+            <p id="accuracy"></p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
